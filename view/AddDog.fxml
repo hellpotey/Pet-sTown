@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="340.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDogController">
+	<children>
+		<ImageView fx:id="imageselect" fitHeight="270.0" fitWidth="200.0" layoutX="19.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../dogshop/src/Images/포메라이안.jpg" />
+			</image>
+		</ImageView>
+		<Label layoutX="253.0" layoutY="19.0" text="이름">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="254.0" layoutY="54.0" text="품종">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="248.0" layoutY="126.0" text="성별">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="253.0" layoutY="89.0" text="나이">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="231.0" layoutY="154.0" text="중성화유무">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Separator layoutX="227.0" layoutY="15.0" orientation="VERTICAL" prefHeight="277.0" prefWidth="3.0" />
+		<Label layoutX="241.0" layoutY="183.0" text="특이사항">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<TextField fx:id="txtdogname" layoutX="299.0" layoutY="11.0" prefWidth="170.0" />
+		<TextField fx:id="txtbreed" layoutX="299.0" layoutY="47.0" prefWidth="170.0" />
+		<TextField fx:id="txtage" layoutX="299.0" layoutY="83.0" prefWidth="170.0" />
+		<RadioButton fx:id="RBmale" layoutX="317.0" layoutY="126.0" mnemonicParsing="false" prefWidth="0.0" selected="true" text="남">
+			<toggleGroup>
+				<ToggleGroup fx:id="dogGender" />
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="RBfemale" layoutX="377.0" layoutY="126.0" mnemonicParsing="false" prefWidth="0.0" text="여" toggleGroup="$dogGender" />
+		<RadioButton fx:id="RBYes" layoutX="317.0" layoutY="154.0" mnemonicParsing="false" selected="true" text="Y">
+			<toggleGroup>
+				<ToggleGroup fx:id="dogNeuter" />
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="RBNo" layoutX="377.0" layoutY="154.0" mnemonicParsing="false" text="N" toggleGroup="$dogNeuter" />
+		<TextArea fx:id="txtspecial" layoutX="239.0" layoutY="202.0" prefHeight="90.0" prefWidth="240.0" />
+		<Button fx:id="btnimages" layoutX="45.0" layoutY="291.0" mnemonicParsing="false" text="이미지 가져오기" />
+		<Button fx:id="btnsave" layoutX="241.0" layoutY="291.0" mnemonicParsing="false" prefWidth="100.0" text="등록하기" />
+		<Button fx:id="btncancle" layoutX="379.0" layoutY="292.0" mnemonicParsing="false" prefWidth="100.0" text="취소" />
+	</children>
+</AnchorPane>

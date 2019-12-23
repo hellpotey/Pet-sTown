@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="370.0" prefWidth="600.0" style="-fx-background-color: #81F7F3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyDogController">
+	<children>
+		<Label fx:id="lbtext" layoutX="29.0" layoutY="23.0" text="???님의 강아지 관리">
+			<font>
+				<Font size="30.0" />
+			</font>
+		</Label>
+		<Button fx:id="btndog1" layoutX="69.0" layoutY="81.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog1" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btndog2" layoutX="185.0" layoutY="81.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog2" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btndog3" layoutX="300.0" layoutY="81.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog3" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btndog4" layoutX="69.0" layoutY="217.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog4" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btndog5" layoutX="185.0" layoutY="217.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog5" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btndog6" layoutX="300.0" layoutY="217.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="100.0">
+			<graphic>
+				<ImageView fx:id="imagedog6" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+			</graphic>
+		</Button>
+		<Button fx:id="btnadd" layoutX="442.0" layoutY="107.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="추가하기" />
+		<Button fx:id="btndelete" layoutX="442.0" layoutY="185.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="삭제하기" />
+		<Button fx:id="btnexit" layoutX="442.0" layoutY="263.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="종료" />
+	</children>
+</AnchorPane>

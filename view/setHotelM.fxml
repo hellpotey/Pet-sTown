@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="setHotelID" layoutX="222.0" layoutY="14.0" prefHeight="33.0" prefWidth="121.0" promptText="아이디" />
+      <TextField id="setHotelDog" layoutX="222.0" layoutY="55.0" prefHeight="33.0" prefWidth="121.0" promptText="강아지 이름" />
+      <Button id="btnsetHotelID" layoutX="343.0" layoutY="14.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../dogshop/src/Images/돋보기.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button id="btnsetHotelDog" layoutX="343.0" layoutY="55.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../dogshop/src/Images/돋보기.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView id="selectTable" layoutX="15.0" layoutY="93.0" prefHeight="329.0" prefWidth="372.0" />
+      <DatePicker id="setHotelCIN" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="183.0" promptText="체크인" />
+      <DatePicker id="setHotelCOUT" layoutX="14.0" layoutY="55.0" prefHeight="33.0" prefWidth="183.0" promptText="체크아웃" />
+      <Button id="btnSetHotel" layoutX="25.0" layoutY="440.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="예약!" />
+      <Button id="btnCancleHotel" layoutX="232.0" layoutY="440.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="취소" />
+   </children>
+</AnchorPane>

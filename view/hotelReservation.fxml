@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hrvController">
+   <tabs>
+      <Tab closable="false" text="호텔예약">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="htv" layoutX="40.0" layoutY="60.0" prefHeight="240.0" prefWidth="520.0" />
+                  <DatePicker fx:id="hdpcheckin" layoutX="40.0" layoutY="22.0" prefHeight="23.0" prefWidth="140.0" promptText="체크인" />
+                  <DatePicker fx:id="hdpcheckout" layoutX="197.0" layoutY="22.0" prefHeight="23.0" prefWidth="140.0" promptText="체크아웃" />
+                  <Button fx:id="hbtnok" layoutX="177.0" layoutY="315.0" mnemonicParsing="false" text="예약" />
+                  <Button fx:id="hbtnconfirm" layoutX="293.0" layoutY="315.0" mnemonicParsing="false" text="예약확인" />
+                  <Button fx:id="hbtncancel" layoutX="422.0" layoutY="315.0" mnemonicParsing="false" text="취소" />
+                  <Button fx:id="hbtntotal" layoutX="480.0" layoutY="22.0" mnemonicParsing="false" text="전체 리스트" />
+                  <Button fx:id="hbtndateserch" layoutX="353.0" layoutY="22.0" mnemonicParsing="false" text="통합검색" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="미용예약">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="stv" layoutX="40.0" layoutY="60.0" prefHeight="240.0" prefWidth="520.0" />
+                  <Button fx:id="sbtncancel" layoutX="520.0" layoutY="322.0" mnemonicParsing="false" text="취소" />
+                  <Button fx:id="sbtnconfirm" layoutX="445.0" layoutY="322.0" mnemonicParsing="false" text="예약확인" />
+                  <Button fx:id="sbtnok" layoutX="394.0" layoutY="322.0" mnemonicParsing="false" text="예약" />
+                  <DatePicker fx:id="sdpdate" layoutX="40.0" layoutY="22.0" prefHeight="23.0" prefWidth="140.0" promptText="날짜선택" />
+                  <ComboBox fx:id="scbstyle" layoutX="40.0" layoutY="322.0" prefHeight="23.0" prefWidth="101.0" promptText="style" />
+                  <Button fx:id="sbtntotal" layoutX="480.0" layoutY="22.0" mnemonicParsing="false" text="전체 리스트" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>

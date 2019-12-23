@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.managerMain">
+	<tabs>
+		<Tab closable="false" text="Hotel">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ebebeb;">
+					<children>
+						<Label layoutX="14.0" layoutY="14.0" text="호텔예약현황">
+							<font>
+								<Font size="40.0" />
+							</font>
+						</Label>
+						<Button fx:id="btndelete1" layoutX="54.0" layoutY="441.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="예약취소" />
+						<Button fx:id="btnExit1" layoutX="452.0" layoutY="441.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="종료" />
+						<DatePicker fx:id="datCheckIn" layoutX="316.0" layoutY="26.0" promptText="체크인" />
+						<DatePicker fx:id="datCheckOut" layoutX="316.0" layoutY="50.0" promptText="체크아웃" />
+						<Button fx:id="btnRoomSearch" layoutX="439.0" layoutY="74.0" mnemonicParsing="false" text="조회" />
+						<ComboBox fx:id="comRoomList" layoutX="316.0" layoutY="74.0" prefHeight="23.0" prefWidth="122.0" promptText="객실선택" />
+						<TableView fx:id="htrvtv" layoutX="54.0" layoutY="118.0" prefHeight="312.0" prefWidth="698.0" />
+						<Button fx:id="btnCustomerSearch" layoutX="692.0" layoutY="26.0" mnemonicParsing="false" text="검색" />
+						<TextField fx:id="txtCustomerSearch" layoutX="570.0" layoutY="26.0" prefHeight="23.0" prefWidth="120.0" promptText="고객 아이디" />
+						<TextField fx:id="txtDogSearch" layoutX="570.0" layoutY="50.0" prefHeight="23.0" prefWidth="120.0" promptText="강아지 이름" />
+						<Button fx:id="btnDogSearch" layoutX="692.0" layoutY="50.0" mnemonicParsing="false" text="검색" />
+						<Button fx:id="btnTotal1" layoutX="54.0" layoutY="74.0" mnemonicParsing="false" text="전체 리스트 보기" />
+						<Button fx:id="btnAgeSearch" layoutX="692.0" layoutY="75.0" mnemonicParsing="false" text="조회" />
+						<ComboBox fx:id="comAgeList" layoutX="570.0" layoutY="75.0" prefHeight="23.0" prefWidth="122.0" promptText="강아지 나이" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Salon">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: ebebeb;">
+					<children>
+						<Button fx:id="btnExit2" layoutX="474.0" layoutY="432.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="종료" />
+						<Label layoutX="14.0" layoutY="14.0" text="미용예약현황">
+							<font>
+								<Font size="40.0" />
+							</font>
+						</Label>
+						<TableView fx:id="slrvtv" layoutX="25.0" layoutY="113.0" prefHeight="295.0" prefWidth="750.0" />
+						<Button fx:id="btndelete2" layoutX="25.0" layoutY="432.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="예약취소" />
+						<Button fx:id="btnTotal2" layoutX="25.0" layoutY="73.0" mnemonicParsing="false" text="전체 리스트 보기" />
+						<Button fx:id="btnCustomerSearch1" layoutX="719.0" layoutY="39.0" mnemonicParsing="false" text="검색" />
+						<DatePicker fx:id="datCheckIn1" layoutX="379.0" layoutY="39.0" promptText="예약일 선택" />
+						<TextField fx:id="txtDogSearch1" layoutX="575.0" layoutY="73.0" promptText="강아지 이름" />
+						<TextField fx:id="txtCustomerSearch1" layoutX="575.0" layoutY="39.0" promptText="고객 아이디" />
+						<Button fx:id="btnDogSearch1" layoutX="719.0" layoutY="73.0" mnemonicParsing="false" text="검색" />
+						<ComboBox fx:id="comTimeList" layoutX="379.0" layoutY="73.0" prefHeight="23.0" prefWidth="139.0" promptText="시간 선택" />
+						<Button fx:id="btnTimeSearch" layoutX="518.0" layoutY="73.0" mnemonicParsing="false" text="조회" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab closable="false" text="customer">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ebebeb;">
+					<children>
+						<Label layoutX="14.0" layoutY="14.0" text="고객관리">
+							<font>
+								<Font size="40.0" />
+							</font>
+						</Label>
+						<Button fx:id="btndelete3" layoutX="25.0" layoutY="422.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="사용자삭제" />
+						<Button fx:id="btnExit3" layoutX="525.0" layoutY="422.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="종료" />
+						<TableView fx:id="customerView" layoutX="25.0" layoutY="113.0" prefHeight="295.0" prefWidth="430.0" />
+						<TextField fx:id="txtCustomerSearch2" layoutX="188.0" layoutY="67.0" promptText="고객 아이디" />
+						<Button fx:id="btnCustomerSearch2" layoutX="395.0" layoutY="67.0" mnemonicParsing="false" text="검색" />
+						<Button fx:id="btnTotal3" layoutX="26.0" layoutY="67.0" mnemonicParsing="false" text="전체 리스트 보기" />
+                  <ImageView fitHeight="280.0" fitWidth="320.0" layoutX="466.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/핑거스냅.jpg" />
+                     </image>
+                  </ImageView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab closable="false" text="dog">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ebebeb;">
+					<children>
+						<Label layoutX="14.0" layoutY="14.0" text="강아지관리">
+							<font>
+								<Font size="40.0" />
+							</font>
+						</Label>
+						<Button fx:id="btndelete4" layoutX="54.0" layoutY="437.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="강아지정보 삭제" />
+						<Button fx:id="btnExit4" layoutX="502.0" layoutY="437.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="종료" />
+						<TableView fx:id="dogView" layoutX="54.0" layoutY="118.0" prefHeight="312.0" prefWidth="698.0" />
+						<TextField fx:id="txtCustomerSearch3" layoutX="369.0" layoutY="83.0" promptText="고객 아이디" />
+						<Button fx:id="btnCustomerSearch3" layoutX="512.0" layoutY="81.0" mnemonicParsing="false" text="검색" />
+						<TextField fx:id="txtDogSearch3" layoutX="573.0" layoutY="81.0" promptText="강아지 이름" />
+						<Button fx:id="btnDogSearch3" layoutX="711.0" layoutY="81.0" mnemonicParsing="false" text="검색" />
+						<Button fx:id="btnTotal4" layoutX="19.0" layoutY="63.0" mnemonicParsing="false" text="전체 리스트 보기" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab closable="false" text="ToTal">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: ebebeb;">
+               <children>
+                  <Button fx:id="btnTotalChart" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="통계" />
+                  <Button fx:id="btnSalonTotal" layoutX="7.0" layoutY="253.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="미용" />
+                  <Button fx:id="btnExit5" layoutX="7.0" layoutY="379.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="종료" />
+                  <AnchorPane layoutX="194.0" layoutY="-1.0" prefHeight="510.0" prefWidth="600.0">
+                     <children>
+                        <PieChart fx:id="pieChartView" prefHeight="510.0" prefWidth="600.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="btnnHotelTotal" layoutX="7.0" layoutY="134.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="호텔" />
+               </children>
+				</AnchorPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>

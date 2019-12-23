@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.deleteHRVController">
+   <children>
+      <TableView fx:id="deleteTb" layoutX="31.0" layoutY="59.0" prefHeight="162.0" prefWidth="437.0" />
+      <Button fx:id="btndelete" layoutX="361.0" layoutY="20.0" mnemonicParsing="false" text="삭제" />
+      <Button fx:id="btnback" layoutX="428.0" layoutY="20.0" mnemonicParsing="false" text="뒤로" />
+      <Label layoutX="31.0" layoutY="21.0" text="호텔 예약 확인">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
